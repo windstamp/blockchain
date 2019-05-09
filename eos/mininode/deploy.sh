@@ -1,4 +1,6 @@
-nohup nodeos -e -p eosio --delete-all-blocks \
+#!/bin/bash
+
+nodeos -e -p eosio \
 --plugin eosio::producer_plugin \
 --plugin eosio::chain_api_plugin \
 --plugin eosio::http_plugin \
@@ -7,6 +9,5 @@ nohup nodeos -e -p eosio --delete-all-blocks \
 --access-control-allow-origin='*' \
 --contracts-console \
 --http-validate-host=false \
---verbose-http-errors >> nodeos.log 2>&1 &
+--verbose-http-errors
 
-sleep 1s
