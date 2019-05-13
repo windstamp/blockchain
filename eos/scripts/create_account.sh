@@ -25,3 +25,6 @@ cleos create account eosio inita $SYSTEM_ACCOUNT_PUBLIC_KEY
 cleos create account eosio node1 $SYSTEM_ACCOUNT_PUBLIC_KEY
 cleos create account eosio node2 $SYSTEM_ACCOUNT_PUBLIC_KEY
 cleos create account eosio node3 $SYSTEM_ACCOUNT_PUBLIC_KEY
+
+cleos create account eosio alice $SYSTEM_ACCOUNT_PUBLIC_KEY
+cleos create account eosio bob $SYSTEM_ACCOUNT_PUBLIC_KEY
